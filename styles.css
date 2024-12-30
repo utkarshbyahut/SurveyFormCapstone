@@ -1,1 +1,48 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">Registration Form</h1>
+    <p id = "description">Registration Form for CampCode</p>
+    <form id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label">Enter your name: <input type="text" placeholder="John Doe" id="name" required /></label>
+          <label for="email" id="email-label">Enter your name: <input type="email" placeholder="name@examplemail.com" id="email" required /></label>
+          <label for="number" id="number-label">Enter your number: <input type="number" min="0000000000" max="9999999999" placeholder="9876543210" id="number" required /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Account type (required)</legend>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked value="personal" /> Personal</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="business" /> Business</label>
+        </fieldset>
+        <fieldset>
+          <label for="referrer">How did you hear about us?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="bio">Provide a bio:
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+          </label>
+        </fieldset>
+        <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <label for="offers-and-promotions">
+        <input class="inline" id="offers-and-promotions" type="checkbox" required name="terms-and-conditions" value="offers-and-promotions" /> I agree to recieve promotional offers on the email provided.</a>
+      </label>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>  
